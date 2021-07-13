@@ -1,0 +1,73 @@
+
+$fsi: 120%;
+$fst: italic;
+$col: white;
+$bc: $colrojo;
+$mar: 1%;
+$marint: 1em;
+
+@mixin saboresTitulo{
+    background-color: $bc;
+    margin: $mar;
+    font-size: $fsi;
+    font-style: $fst;
+    color: $col;
+}
+
+@mixin saboresInterno ($bci){
+    margin:$marint;
+    background-color: $bci;
+}
+
+/*grid tabla gustos*/
+
+.contenedorGustos {
+        width: 60% auto; 
+
+        .gridGustos {
+
+                background: radial-gradient($colrosa, #f6e5e9,$colrojo);
+    
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(5, 1fr);
+                grid-template-areas: 
+                "Chocolat Crema Fruta"
+                "Chocolat Crema Fruta"
+                "Amargo Mascarpone Naranja"
+                "ConNuez Americana Limon"
+                "Blanco Menta Frutilla";
+                row-gap: 0.5%;
+                column-gap: 0.5%;
+                text-align: center;
+        
+    
+                .gridChocolat {
+                @include saboresTitulo;
+                grid-area: Chocolat;
+                }
+    
+                .gridCrema {
+                @include saboresTitulo;
+                grid-area: Crema;
+                }
+    
+                .gridFruta {
+                @include saboresTitulo;
+                grid-area: Fruta; 
+                }
+    
+                .gridAmargo {grid-area: Amargo; @include saboresInterno ($colceleste); }
+                .gridNuez {grid-area: ConNuez; @include saboresInterno ($colceleste)}
+                .gridBlanco {grid-area: Blanco; @include saboresInterno ($colceleste)}
+                .gridNaranja {grid-area: Naranja; @include saboresInterno ($colgris)}
+                .gridLimon {grid-area: Limon; @include saboresInterno ($colgris)}
+                .gridFrutilla {grid-area: Frutilla; @include saboresInterno ($colgris)}
+                .gridMascarpone {grid-area: Mascarpone; @include saboresInterno ($colrosa);}
+                .gridAmericana {grid-area: Americana; @include saboresInterno ($colrosa);}
+                .gridMenta {grid-area: Menta; @include saboresInterno ($colrosa)}
+    
+                .gridGustos div:hover{background-color: $colrojo;}
+
+        }
+}

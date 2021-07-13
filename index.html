@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <!--Metas-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Descripcion-->
+  <meta name="description" content="Rapa Nui es una heladeria y chocolateria artesanal, que trabaja con las mejores materias primas para obtener los mejores sabores para sus clientes">
+  <!--keywords-->
+  <meta name="keywords" content="healdo, rapa, nui, chocolate, dulce">
+  <!--icono-->
+  <link rel="icon" type="image/png" href="./imagenes/iceicon2.png">
+  <!--letra fuente-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--css-->
+  <link rel="stylesheet" href="./scss/estilo.css">
+  <!--titulo-->
+  <title>Rapa Nui Menu</title>
+
+</head>
+
+<body>
+
+  <!--Menu navegacion boot-->
+  <nav class="navbar navbar-expand-lg navbar-light barraNav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Menu de Navegacion</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html"><img src="./imagenes/logorapvio.jpg"
+                alt="logo" id="barraNav__img">
+              <p>Inicio</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./paginas/gustos.html"><img src="./imagenes/gelato.png" alt="helados"
+                id="barraNav__img">
+              <p>Gustos</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./paginas/sucursales.html"><img src="./imagenes/house.png" alt="sucursales"
+                id="barraNav__img">
+              <p>Sucursales</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./paginas/delivery.html"><img src="./imagenes/delivery-man.png" alt="delivery"
+                id="barraNav__img">
+              <p>Delivery</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./paginas/quienes.html"><img src="./imagenes/chocolate.png" alt="chocolates"
+                id="barraNav__img">
+              <p>Quienes somos</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Seccion principal-->
+  <seccion class="principal">
+    <div class="row">
+      <div class="col-3">
+      </div>
+      <div class="col-6">
+        <img id="principal__logo" src=".\imagenes\rapa nuin2.jpg" alt="logo">
+        <h1 class="marcaMov">RAPANUI HELADERIA</h1>
+      </div>
+      <div class="col-3">
+      </div>
+    </div>
+  </seccion>
+
+  <!--Seccion contenido-->
+  <header class="contenido">
+    <div class="row">
+      <div class="col-12">
+        <img src=".\imagenes\rapanui.png" alt="logo rapa nui" class="imagen-fluid">
+
+        <h5 id="fraseChoco">🍫 El legado del chocolate artesanal 🍫</h5>
+
+        <article>
+          <h4 id="articuloChoco"> Bombones, trufas y chocolates a elección. Podrás elegir las delicias que más te
+            gusten, creadas y elaboradas a mano en Bariloche, en el área de chocolatería de nuestros locales.
+          </h4>
+        </article>
+      </div>
+    </div>
+  </header>
+
+  <!--Seccion Promociones y novedades-->
+  <section class="container contenedorListas">
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-10 tablaPromo">
+        <table>
+          <tr>
+            <th>
+              <h5>Promociones</h5>
+            </th>
+            <th>
+              <h5>Novedades</h5>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <h6 id="listaDescuen">
+                <ul class="cajaDescu">
+                  <li>2x1</li>
+                  <li>10% OFF</li>
+                </ul>
+              </h6>
+            </td>
+            <td>
+              <h6 id="listaNovedad">
+                <ul class="cajaNuevo">
+                  <li>nuevos sabores</li>
+                  <li>nueva sucursal</li>
+                </ul>
+              </h6>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-1"></div>
+    </div>
+  </section>
+
+  <!--Seccion contacto-->
+  <h3 class="subtitulo">Comunicate con nosotros</h3>
+
+  <section class="container contacto">
+
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-2">
+        <h5>Twitter <a href="https://twitter.com/?lang=es" target="_blank"><img class="contacto__logo" alt="twitter" src=".\imagenes\gorjeo.png"></a></h5>
+        <p>#rapanui</p>
+      </div>
+      <div class="col-2">
+        <h5>Instagram <a href="https://www.instagram.com/?hl=es" target="_blank"><img class="contacto__logo" alt="instagram" src=".\imagenes\instagram.png"></a></h5>
+        <p>@rapanui</p>
+      </div>
+      <div class="col-2">
+        <h5>Whatsapp <a href="https://web.whatsapp.com/" target="_blank"><img class="contacto__logo" alt="whatsapp" src=".\imagenes\whatsapp.png"></a></h5>
+        <p>15 555 5555</p>
+      </div>
+      <div class="col-2">
+        <h5>Facebook <a href="https://es-la.facebook.com/" target="_blank"><img class="contacto__logo" alt="facebook" src=".\imagenes\facebook.png"></a></h5>
+        <p>rapanui@rn.com</p>
+      </div>
+    </div>
+    <div class="col-2"></div>
+    </div>
+  </section>
+
+  <footer>Sitio desarrollado por MFA</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

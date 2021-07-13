@@ -1,0 +1,11 @@
+.barraNav{
+    background-color: $colrosa;
+    margin: 2em auto;
+    text-align: center;
+    max-width: fit-content;
+    border: solid $colnav 0.5em;
+
+    #barraNav__img {width: 5em;}
+
+    p{text-align: center;}
+}

@@ -1,0 +1,25 @@
+.quienes {
+    
+    .quienes__imagen, video {width: 80%;}
+
+    .quienes__parrafo {margin: 2em; text-align: justify;}
+
+    #imagenItalia {width: 20%; float: left; margin: 1em;} 
+
+    .row {margin: 1em};
+}
+
+@media only screen and(max-width: 576px)
+    {    
+    .quienes__parrafo {font-size: 100%;}
+
+    .quienes {
+    
+        .quienes__imagen, video {width: 120%;}
+
+    }
+}
+@media only screen and (min-width: 577px)
+    {
+   .quienes__parrafo {font-size: 150%;}
+    }   

@@ -1,0 +1,409 @@
+.barraNav {
+  background-color: #e798ae;
+  margin: 2em auto;
+  text-align: center;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  border: solid rebeccapurple 0.5em;
+}
+
+.barraNav #barraNav__img {
+  width: 5em;
+}
+
+.barraNav p {
+  text-align: center;
+}
+
+/*grid tabla gustos*/
+.contenedorGustos {
+  width: 60% auto;
+}
+
+.contenedorGustos .gridGustos {
+  background: radial-gradient(#e798ae, #f6e5e9, #962d2d);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-areas: "Chocolat Crema Fruta" "Chocolat Crema Fruta" "Amargo Mascarpone Naranja" "ConNuez Americana Limon" "Blanco Menta Frutilla";
+  row-gap: 0.5%;
+  -webkit-column-gap: 0.5%;
+          column-gap: 0.5%;
+  text-align: center;
+}
+
+.contenedorGustos .gridGustos .gridChocolat {
+  background-color: #962d2d;
+  margin: 1%;
+  font-size: 120%;
+  font-style: italic;
+  color: white;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: Chocolat;
+}
+
+.contenedorGustos .gridGustos .gridCrema {
+  background-color: #962d2d;
+  margin: 1%;
+  font-size: 120%;
+  font-style: italic;
+  color: white;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: Crema;
+}
+
+.contenedorGustos .gridGustos .gridFruta {
+  background-color: #962d2d;
+  margin: 1%;
+  font-size: 120%;
+  font-style: italic;
+  color: white;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: Fruta;
+}
+
+.contenedorGustos .gridGustos .gridAmargo {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: Amargo;
+  margin: 1em;
+  background-color: lightblue;
+}
+
+.contenedorGustos .gridGustos .gridNuez {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: ConNuez;
+  margin: 1em;
+  background-color: lightblue;
+}
+
+.contenedorGustos .gridGustos .gridBlanco {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: Blanco;
+  margin: 1em;
+  background-color: lightblue;
+}
+
+.contenedorGustos .gridGustos .gridNaranja {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: Naranja;
+  margin: 1em;
+  background-color: lightgrey;
+}
+
+.contenedorGustos .gridGustos .gridLimon {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: Limon;
+  margin: 1em;
+  background-color: lightgrey;
+}
+
+.contenedorGustos .gridGustos .gridFrutilla {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: Frutilla;
+  margin: 1em;
+  background-color: lightgrey;
+}
+
+.contenedorGustos .gridGustos .gridMascarpone {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: Mascarpone;
+  margin: 1em;
+  background-color: #e798ae;
+}
+
+.contenedorGustos .gridGustos .gridAmericana {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: Americana;
+  margin: 1em;
+  background-color: #e798ae;
+}
+
+.contenedorGustos .gridGustos .gridMenta {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: Menta;
+  margin: 1em;
+  background-color: #e798ae;
+}
+
+.contenedorGustos .gridGustos .gridGustos div:hover {
+  background-color: #962d2d;
+}
+
+.quienes .quienes__imagen, .quienes video {
+  width: 80%;
+}
+
+.quienes .quienes__parrafo {
+  margin: 2em;
+  text-align: justify;
+}
+
+.quienes #imagenItalia {
+  width: 20%;
+  float: left;
+  margin: 1em;
+}
+
+.quienes .row {
+  margin: 1em;
+}
+
+@media only screen and (max-width: 576px) {
+  .quienes__parrafo {
+    font-size: 100%;
+  }
+  .quienes .quienes__imagen, .quienes video {
+    width: 120%;
+  }
+}
+
+@media only screen and (min-width: 577px) {
+  .quienes__parrafo {
+    font-size: 150%;
+  }
+}
+
+.fotoGale {
+  background-color: #e9d3d6;
+}
+
+.carousel-inner {
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+
+.tituloGaleria {
+  -webkit-animation-name: tituloGaleria;
+          animation-name: tituloGaleria;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  margin: 3em;
+  text-align: center;
+  text-decoration: underline;
+  color: rebeccapurple;
+}
+
+@-webkit-keyframes tituloGaleria {
+  0% {
+    opacity: 0;
+    -webkit-transform: skew(30deg);
+            transform: skew(30deg);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes tituloGaleria {
+  0% {
+    opacity: 0;
+    -webkit-transform: skew(30deg);
+            transform: skew(30deg);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.formuDely {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2em;
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*General*/
+/*
+    background: #c9989e; width: 90%;
+    background: linear-gradient(90deg, #c9989e 11%, #e9d3d6 26%, #e9e6e6 100%);
+}
+*/
+footer {
+  margin: 3em;
+}
+
+/*texto*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: sigmar one;
+}
+
+.subtitulo {
+  margin: 2em;
+  color: #962d2d;
+}
+
+h1 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+h2 {
+  margin: 2em;
+}
+
+#fraseChoco {
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+#fraseChoco:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+/*media*/
+.principal {
+  text-align: center;
+  /* no por ahora
+    .marcaMov{
+    color: $coloscuro;
+    transition: 3s;
+    margin: 0.5em;
+    }
+    
+    .marcaMov:hover{
+    transform: scale(1.5,1.5); 
+    }
+    */
+}
+
+.principal .row {
+  margin: 1em;
+}
+
+.principal #principal__logo {
+  width: 90%;
+  border-radius: 80%;
+}
+
+/*secciones index*/
+.contenido .row {
+  margin: 1em;
+}
+
+.contenido #fraseChoco {
+  word-spacing: 3em;
+  text-align: center;
+  margin-top: 3em;
+  width: 50% auto;
+}
+
+.contenido .imagen-fluid {
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+
+.contenido article {
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+
+.contenido #articuloChoco {
+  font-family: sigmar One;
+  border: dotted;
+  background: -webkit-gradient(linear, right top, left top, from(lightgrey), color-stop(#dad3d3), to(#646161));
+  background: linear-gradient(to left, lightgrey, #dad3d3, #646161);
+  margin: 2em;
+}
+
+.contenido h4 {
+  padding: 1em;
+}
+
+.contacto {
+  width: 90%;
+  display: block;
+  margin: auto;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  text-align: center;
+}
+
+.contacto img {
+  margin: 1em;
+}
+
+.contacto .contacto__logo {
+  width: 2em;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.contacto .contacto__logo:hover {
+  -webkit-transform: scale(2.1, 2.1);
+          transform: scale(2.1, 2.1);
+}
+
+/*tabla*/
+.tablaPromo h5 {
+  margin: 1em;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+table #listaDescuen {
+  background-color: rebeccapurple;
+  padding: 1em;
+  color: #e9d3d6;
+}
+
+table #listaNovedad {
+  background-color: #962d2d;
+  padding: 1em;
+  color: white;
+}
+
+/*queries*/
+@media only screen and (max-width: 576px) {
+  .contacto {
+    font-size: 90%;
+  }
+  .contacto p {
+    font-size: 90%;
+  }
+  .contacto h5 {
+    font-size: 70%;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */

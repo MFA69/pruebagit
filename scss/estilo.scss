@@ -1,0 +1,168 @@
+@import "colores";
+@import "navegacion";
+@import "gustos";
+@import "quienes";
+@import "sucursales";
+@import "delivery";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*General*/
+
+
+
+
+/*
+    background: #c9989e; width: 90%;
+    background: linear-gradient(90deg, #c9989e 11%, #e9d3d6 26%, #e9e6e6 100%);
+}
+*/
+
+$margral: 1em;
+
+footer {
+    margin: $margral*3;
+}
+
+/*texto*/
+
+h1, h2, h3, h4, h5, h6{font-family: sigmar one;}
+
+.subtitulo {margin: 2em;
+    color: $colrojo;}
+
+h1{margin-top: 1em; margin-bottom: 1em;}
+
+h2{margin: 2em;}
+
+#fraseChoco {transition: 3s;}
+
+#fraseChoco:hover{
+    transform: scale(1.1,1.1); }
+
+/*media*/
+
+.principal 
+    {text-align: center; 
+        
+    .row {margin: 1em}
+    
+    #principal__logo {width: 90%;
+    border-radius: 80%;
+    }
+
+    /* no por ahora
+    .marcaMov{
+    color: $coloscuro;
+    transition: 3s;
+    margin: 0.5em;
+    }
+    
+    .marcaMov:hover{
+    transform: scale(1.5,1.5); 
+    }
+    */
+} 
+
+/*secciones index*/
+
+.contenido{
+
+    .row {margin: 1em;}
+
+    #fraseChoco{
+        word-spacing: 3em; 
+        text-align: center; 
+        margin-top: 3em;
+        width: 50% auto;
+    }
+
+    .imagen-fluid{
+        width: 70%; 
+        display:block;
+        margin:auto; 
+    }
+
+    article{
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
+
+    #articuloChoco {
+        font-family: sigmar One; 
+        border: dotted;
+        background: linear-gradient(to left, $colgris, rgb(218, 211, 211), rgb(100, 97, 97));
+        margin: 2em;
+    }
+
+    h4{padding: 1em;}
+
+}
+
+.contacto {
+    
+    width: 90%; 
+    display:block;
+    margin:auto;
+    max-width: fit-content;
+    text-align: center;
+
+    img {margin: 1em}
+    
+    .contacto__logo {width: 2em; transition: 2s;}
+
+    .contacto__logo:hover {transform: scale(2.1,2.1);}
+
+}
+
+/*tabla*/
+
+    .tablaPromo{
+            h5 {margin: 1em;
+                text-decoration-line: underline;
+            }
+    }
+
+
+    $padTab: 1em;
+    @mixin tablaMix ($bcolTab){
+
+        background-color:$bcolTab;
+        padding: $padTab;
+
+        @if $bcolTab == $colnav{
+            color: $colfondo;
+        }
+
+            @else if $bcolTab == $colrojo{
+                color: white;
+        }
+    }
+
+    table{ 
+
+        #listaDescuen {
+            @include tablaMix ($colnav)
+        }
+
+        #listaNovedad {
+            @include tablaMix ($colrojo)
+        }
+    }
+
+/*queries*/
+
+@media only screen and(max-width: 576px)
+    {
+    .contacto {font-size: 90%;}
+
+    .contacto p{font-size: 90%;}
+
+    .contacto h5{font-size: 70%;}
+
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <!--Metas-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Descripcion-->
+  <meta name="description" content="Rapa Nui, llega a tu casa, podes hacer tu pedido desde la pagina">
+  <!--keywords-->
+  <meta name="keywords" content="healdo, rapa, nui, chocolate, dulce, delivery">
+  <!--icono-->
+  <link rel="icon" type="image/png" href="../imagenes/iceicon2.png">
+  <!--letra fuente-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+  <!--animaciones-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--css-->
+  <link rel="stylesheet" href="../scss/estilo.css">
+  <!--titulo-->
+  <title>Rapa Nui Delivery</title>
+
+</head>
+
+<body>
+
+  <!--Menu navegacion boot-->
+
+  <nav class="navbar navbar-expand-lg navbar-light barraNav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Menu de Navegacion</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html"><img src="../imagenes/logorapvio.jpg"
+                alt="logo" id="barraNav__img">
+              <p>Inicio</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../paginas/gustos.html"><img src="../imagenes/gelato.png" alt="helados"
+                id="barraNav__img">
+              <p>Gustos</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../paginas/sucursales.html"><img src="../imagenes/house.png" alt="sucursales"
+                id="barraNav__img">
+              <p>Sucursales</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../paginas/delivery.html"><img src="../imagenes/delivery-man.png" alt="delivery"
+                id="barraNav__img">
+              <p>Delivery</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../paginas/quienes.html"><img src="../imagenes/chocolate.png" alt="chocolates"
+                id="barraNav__img">
+              <p>Quienes somos</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Formulario-->
+  <h2 class="animate__animated animate__lightSpeedInLeft">Delivery</h2>
+  <div class="row formuDely mt-2">
+    <div class="col">
+
+      <input class="form-control form-control-lg" type="text" placeholder="Nombre"
+        aria-label=".form-control-lg example">
+      <input class="form-control" type="text" placeholder="Direccion" aria-label="default input example">
+      <input class="form-control form-control-sm" type="text" placeholder="Telefono"
+        aria-label=".form-control-sm example">
+
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Email</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+
+    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+      <option selected>Sucursal</option>
+
+      <option value="1">Belgrano</option>
+      <option value="2">Recoleta</option>
+      <option value="3">Caballito</option>
+      <option value="4">Flores</option>
+      <option value="5">Puerto Madero</option>
+    </select>
+
+    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+      <option selected>Gusto 1</option>
+
+      <option value="1">Chocolate Blanco</option>
+      <option value="2">Chocolate Amargo</option>
+      <option value="3">Chocolate RapaNui</option>
+      <option value="4">Limon</option>
+      <option value="5">Naranja</option>
+      <option value="6">Frutilla</option>
+      <option value="7">Mascarpone</option>
+      <option value="8">Americana</option>
+      <option value="9">Avellanas</option>
+    </select>
+
+    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+      <option selected>Gusto 2</option>
+
+      <option value="1">Chocolate Blanco</option>
+      <option value="2">Chocolate Amargo</option>
+      <option value="3">Chocolate RapaNui</option>
+      <option value="4">Limon</option>
+      <option value="5">Naranja</option>
+      <option value="6">Frutilla</option>
+      <option value="7">Mascarpone</option>
+      <option value="8">Americana</option>
+      <option value="9">Avellanas</option>
+    </select>
+    <div class="formuDely">
+      <div class="row mt-2">
+        <button type="button" class="btn btn-secondary btn-lg btnEnviar">Enviar</button>
+        <button type="button" class="btn btn-danger btn-lg">Cancelar</button>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <footer>Sitio desarrollado por MFA</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
